@@ -8,6 +8,7 @@ A simple Skeleton for PHP MVC projects.
 - Cookie Configuration
 - Environment Variables
 - SQL basics (very simple)
+- Database Configuration
 - A MasterController to kick of the application
 
 *The rest is up to you! Have fun making your MVC-application.*
