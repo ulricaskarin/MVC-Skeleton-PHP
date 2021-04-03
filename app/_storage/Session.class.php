@@ -18,7 +18,7 @@ class Session
   public static $flashMessage = 'flashMessage';
 
   // Cookie parameters for session:
-  private static $domain = "ulricaskarin.com";
+  private static $domain = 'your_domain.com';
   private static $path = "/";
   private static $secure = false;
   private static $httponly = true;

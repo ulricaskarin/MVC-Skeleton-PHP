@@ -1,4 +1,14 @@
 /**
+ * Create Database
+ */
+CREATE DATABASE IF NOT EXISTS database_name;
+
+/**
+* Delete Database
+*/
+DROP DATABASE IF EXISTS database_name;
+
+/**
  * Example SQL create Table
  */
  CREATE TABLE IF NOT EXISTS `accounts`
@@ -10,12 +20,24 @@
  `created` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
  PRIMARY KEY (`id`)) ENGINE = InnoDB;
 
- /**
-  * Create Database
-  */
-CREATE DATABASE IF NOT EXISTS
+/**
+ * Truncate Table [deletes data inside table]
+ */
+TRUNCATE TABLE `accounts`;
 
 /**
- * Delete Database
+ * Alter Table ADD
  */
-DROP DATABASE IF EXISTS
+ALTER TABLE `accounts`
+ADD `owner_email` VARCHAR(255);
+
+/**
+ * Alter Table DROP
+ */
+ALTER TABLE `accounts`
+DROP COLUMN `owner_email`;
+
+ /**
+  * Drop Table
+  */
+ DROP TABLE `accounts`;

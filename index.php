@@ -14,4 +14,5 @@ use \_storage\Session;
 Session::startSession();
 Session::displaySessionArray();
 
-echo 'Hello World';
+$masterController = new \controller\MasterController();
+$masterController->listenToUserAction();
