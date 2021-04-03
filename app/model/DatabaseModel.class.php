@@ -20,7 +20,7 @@
  * @version 1.0.0
  */
 
- namespace models;
+ namespace model;
 
  // ★ Requires credentials:
  require_once(ROOT_PATH.'/app/_config/db_config.php');

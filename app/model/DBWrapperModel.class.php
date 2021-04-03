@@ -16,7 +16,7 @@
  * @version 1.0.0
  */
 
- namespace models;
+ namespace model;
 
  abstract class DBWrapperModel
  {
