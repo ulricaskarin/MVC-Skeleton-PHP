@@ -16,12 +16,18 @@ A simple Skeleton for PHP MVC projects.
 ```
 git clone https://github.com/ulricaskarin/MVC-Skeleton-PHP.git
 ```
-## Before launch, be sure to provide:
-Add Database Configuration in **app/_config/_db_config.php**
+## Before launch:
+Be sure to provide your database configuration in **app/_config/_db_config.php**
 
 ```php
 define('DB_HOST', 'localhost');
 define('DB_USER', '');
 define('DB_PASS', '');
 define('DB_NAME', 'MyPreciousDatabase');
+```
+
+## To Notice:
+All Class files must be named with the **dot class dot php** in order for Autoloader to work:
+```php
+MyClass.class.php
 ```
